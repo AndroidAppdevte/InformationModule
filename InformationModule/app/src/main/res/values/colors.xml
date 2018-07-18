@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_red">#E94F53</color>
+    <color name="xinwen_source">#FB4747</color>
+    <color name="titleColor">#FB4747</color>
+    <color name="gonggao_source">#5193AD</color>
+    <color name="yanbao_source">#FFA766</color>
+
+    <color name="color_black">#000000</color>
+    <color name="color_black_light">#333333</color>
+    <color name="market_one_detail_t1">#4A4A4A</color>
+    <color name="color_black_mid">#555555</color>
+    <color name="color_black_dark">#999999</color>
+    <color name="color_time">#b6b6b6</color>
+    <color name="color_gray_deep">#bababa </color>
+    <color name="theme_divider">#eeeeee</color>
+
+    <color name="color_gray_shallow">#EAEBED</color>
+    <color name="divider">#eeeeee</color>
+    <color name="transparentNone">#00000000</color>
+    <color name="gray_back">#30fdfdfd</color>
+    <color name="color_line5">#F9F9F9</color>
+    <color name="background_c">#f6f6f6</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="color_white">#ffffff</color>
+
+
+</resources>

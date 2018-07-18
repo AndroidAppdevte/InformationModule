@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/color_line5"
+    android:layout_gravity="bottom">
+
+
+    <ImageView
+        android:id="@+id/footer_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/optional_footer"/>
+
+    <TextView
+        android:id="@+id/optional_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="松开加载更多.."
+        android:textSize="@dimen/dp_14" />
+
+</RelativeLayout>

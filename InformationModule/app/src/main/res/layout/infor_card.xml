@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data></data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:id="@+id/top_head"
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/card_menu"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/card_list"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/item_image_lhbd"
+                    android:src="@mipmap/infor_main_lhbd"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp" />
+
+                <TextView
+                    android:id="@+id/item_str_lhbd"
+                    android:text="龙虎榜单"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/color_black"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card_calendar"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/item_image_cjrl"
+                    android:src="@mipmap/infor_main_cjrl"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp" />
+
+                <TextView
+                    android:id="@+id/item_str_cjrl"
+                    android:text="财经日历"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/color_black"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/card_live"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/item_image_cjzb"
+                    android:src="@mipmap/infor_main_cjzb"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp" />
+
+                <TextView
+                    android:id="@+id/item_str_cjzb"
+                    android:text="财经直播"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/color_black"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/card_intraday_live"-->
+                <!--android:orientation="vertical"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_weight="1">-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/item_intraday_live"-->
+                    <!--android:src="@mipmap/icon_intraday_live"-->
+                    <!--android:layout_width="26dp"-->
+                    <!--android:layout_height="26dp" />-->
+
+                <!--<TextView-->
+                    <!--android:text="盘中直播"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:textColor="@color/color_black"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+        <TextView style="@style/line_style5_V" />
+
+        <LinearLayout
+            android:id="@+id/infor_new"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:id="@+id/head_name"
+                    android:text="决策内参"
+                    style="@style/titles_left" />
+
+            </RelativeLayout>
+
+            <TextView style="@style/line_style3_H" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/colorWhite">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/choice_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

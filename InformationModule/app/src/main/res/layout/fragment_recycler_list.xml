@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data></data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5">
+
+        <RelativeLayout
+            android:id="@+id/list_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@mipmap/no_data_img"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:textColor="#999999"
+                android:textSize="@dimen/sp_16"
+                android:text="暂时无数据，请稍后查看"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/top_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_13"
+            android:paddingBottom="@dimen/dp_10"
+            android:drawableLeft="@mipmap/financial_live_time"
+            android:drawablePadding="@dimen/dp_6"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#555555"
+            android:visibility="gone"/>
+
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/fragment_recycler_spring"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_time">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_recycler_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+        </com.liaoinstan.springview.widget.SpringView>
+
+    </RelativeLayout>
+</layout>

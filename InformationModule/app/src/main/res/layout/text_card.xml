@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data></data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/root_text"
+        android:background="@drawable/coner_back_gray2"
+        android:orientation="vertical"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <com.scqkzqtz.information.widget.AutoTextView
+            android:text="全部老师"
+            android:id="@+id/name_teacher"
+            android:textSize="@dimen/sp_12"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/color_black_light"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+    </LinearLayout>
+</layout>

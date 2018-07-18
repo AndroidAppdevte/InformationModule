@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/color_line5"
+    android:layout_height="80dp"
+    android:layout_gravity="top">
+
+    <ProgressBar
+        android:id="@+id/header_img"
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_36"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/optional_header_text"
+        android:indeterminate="false"
+        android:layout_toStartOf="@+id/optional_header_text"
+        android:indeterminateDrawable="@drawable/pull_to_refresh_loading"/>
+
+    <LinearLayout
+        android:id="@+id/optional_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/optional_header_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="松开立即刷新"
+            android:textColor="@color/color_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/optional_header_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="最后更新: 今天 15:09"
+            android:textColor="@color/color_black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

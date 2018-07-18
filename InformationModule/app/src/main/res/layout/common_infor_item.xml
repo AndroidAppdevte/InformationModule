@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data></data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/click_item_background">
+        <RelativeLayout
+            android:id="@+id/card_new_linear"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:padding="13dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/item_title"
+                        android:text="大盘结束五连跌 关注创业板反弹持续性关注创业板反弹持续性"
+                        android:textSize="@dimen/sp_17"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textColor="@color/color_black_light"
+                        android:lineSpacingExtra="1dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp" />
+
+                    <TextView
+                        android:id="@+id/just_tag"
+                        android:layout_width="115dp"
+                        android:layout_height="1dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:paddingRight="115dp"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/item_tag1"
+                        android:text="大盘分析"
+                        android:textSize="@dimen/sp_9"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:textColor="#999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/item_tag2"
+                        android:visibility="gone"
+                        android:text=""
+                        android:textSize="@dimen/sp_9"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/item_tag3"
+                        android:text="大盘分析 "
+                        android:textSize="@dimen/sp_9"
+                        android:visibility="gone"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/item_time"
+                        android:text="30分钟前"
+                        android:textSize="@dimen/sp_9"
+                        android:singleLine="true"
+                        android:textColor="#999999"
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/item_tag1"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_65" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

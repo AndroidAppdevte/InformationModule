@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data></data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:id="@+id/top_head"
+        android:background="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/card_new_image1"
+            android:background="@mipmap/no_data_img"
+            android:layout_width="match_parent"
+            android:layout_height="165dp" />
+
+        <ListView
+            android:id="@+id/card_new_listView"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="447dp"
+            android:layout_gravity="center_horizontal"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:dividerHeight="0px" />
+
+        <TextView style="@style/line_style5_V" />
+
+        <ImageView
+            android:id="@+id/card_new_image2"
+            android:src="@mipmap/no_data_img"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="110dp" />
+
+        <TextView style="@style/line_style5_V" />
+
+    </LinearLayout>
+</layout>

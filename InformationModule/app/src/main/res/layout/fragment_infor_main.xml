@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/titleColor"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pop_up"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/titleColor" />
+
+        <LinearLayout
+            android:id="@+id/linlay_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="23dp"
+            android:background="@color/titleColor">
+
+            <ImageView
+                android:id="@+id/title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:src="@mipmap/icon_person" />
+
+            <TextView
+                style="@style/activity_title_text"
+                android:layout_marginLeft="40dp"
+                android:text="资讯"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_18" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/title_message"
+                    android:layout_width="@dimen/dp_35"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/im_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/icon_warning_white" />
+
+                    <View
+                        android:id="@+id/view_msg"
+                        android:layout_width="@dimen/dp_4"
+                        android:layout_height="@dimen/dp_4"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/background_red_solid_circle"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/titleColor">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginRight="48dp"
+                android:background="@color/color_white"
+                app:tabIndicatorColor="@color/color_red"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@color/color_red"
+                app:tabTextColor="@color/color_black_light" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="48dp"
+                android:background="@color/color_line5" />
+
+            <ImageView
+                android:id="@+id/infor_menu"
+                android:layout_width="48dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/color_white"
+                android:padding="10dp"
+                android:src="@mipmap/icon_infor_add" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data></data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/click_item_background">
+        <ImageView
+            android:id="@+id/card_new_image"
+            android:background="@mipmap/no_data_img"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scaleType="fitXY"/>
+
+        <TextView style="@style/line_style3_H"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            />
+
+    </LinearLayout>
+</layout>
